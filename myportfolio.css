@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to left, #1e1d1d , #635f5f 50%, #f0f0f0 100%); 
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro,
+.about,
+.projects,
+.skills,
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 254, 254, 0.3)
+    );
+    border: black 3px solid;
+    backdrop-filter: blur(1em);
+    width: 50%;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 3em;
+}
+
+
+.intro, .projects, .contact{
+    margin-right: 50%;
+    margin-bottom: 10%;
+    width: 35%;
+}
+
+.about, .skills{
+    margin-left: 50%;
+    width: 35%;
+}
+
+.intro h2{
+    margin-top: 1em;
+    font-weight: lighter;
+}
+
+span{
+    font-weight: 750;
+}
+ 
+h4{
+    margin-top: 2em;
+    font-weight: lighter;
+}
+
+li{
+    margin-top: 1.7em;
+}
+
+ul{
+    list-style-type: none;
+}

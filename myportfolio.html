@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 1</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          canvas {
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: -1;
+          }
+          div.btnd{
+            position: absolute;
+            z-index: 2;
+            display: none;
+          }
+          button:hover{
+            cursor: pointer;
+          }
+    </style>
+</head>
+<body>
+    <!-- <div class="btns">
+      <button id="prev-view">prev view</button>
+      <button id="next-view">next view</button>
+    </div> -->
+    <canvas class="webgl"></canvas>
+    <main>
+      <!-- intro section/ view -->
+      <div class="intro-container container">
+          <div class="intro">
+              <h1>
+                  Hello! 👋🏻
+              </h1>
+              <h2>
+                  I'm <span>Syam</span>
+              </h2>
+              <h3>
+                  this is my first 3D web portfolio , and something little about me 💻
+              </h3>
+          </div>
+      </div>
+
+      <!-- about container -->
+      <div class="about-container container">
+          <div class="about">
+              <h2>
+                  Scenario 🌐
+              </h2>
+              <h4>
+                I'm a final-year Computer Science Engineering student and a web developer, currently undergoing <span>Three.js</span> training in <span>PlugXR</span> to enhance my skills in 3D rendering. This training is helping me explore new possibilities in creating immersive and interactive experiences.
+              </h4>
+          </div>
+      </div>
+
+      <!-- project-container -->
+       <div class="project-container container">
+          <div class="projects">
+              <h2>
+                  projects 🏆
+              </h2>
+              <h4>
+                  This is the list of projects
+              </h4>
+              <ul>
+                  <li>Basics</li>
+                  <li>A sample shooting game</li>
+                  <li>3D Web Portfolio</li>
+                  <li>Rest will updated soon...</li>
+              </ul>
+          </div>
+       </div>
+
+       <!-- skills container -->
+        <div class="skills-container container">
+          <div class="skills">
+              <h2>
+                  Skills 🧠
+              </h2>
+              <h4>
+                  These are my skills
+              </h4>
+              <ul>
+                  <li>Web development</li>
+                  <li>Three.js</li>
+                  <li>JavaScript and Programming</li>
+                  <li>Problem-Solving and Debugging</li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- contact container -->
+         <div class="contact-container container">
+          <div class="contact">
+              <h2>
+                  Contacts ☎️
+              </h2>
+              <ul>
+                  <li><a href="syamsatishpolipalli@gmail.com">Email</a></li>
+                  <li><a href="www.linkedin.com/in/syam-satish-polipalli-507864250">LinkedIn</a></li>
+                  <li><a href="@_shyam___">In</a></li>
+                  <li><a href="8897908358">Phone</a></li>
+              </ul>
+          </div>
+         </div>
+  </main>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.172.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.172.0/examples/jsm/"
+          }
+        }
+      </script>
+      <script type="module">
+        import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.20/+esm';
+        </script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+      <script type="module" src="myportfolio.js"></script>
+</body>
+</html>
